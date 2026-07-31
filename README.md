@@ -61,7 +61,7 @@ python3 -B prompt-optimizerv2.py --self-test
 1. Open `chrome://extensions`.
 2. Turn on `Developer mode`.
 3. Click `Load unpacked`.
-4. Select this folder: `/Users/eliottchong/Documents/prompt-optimizerv2`.
+4. Select this folder: `/Users/xx/Documents/prompt-optimizerv2`.
 5. Pin `Prompt Optimizer` from the Chrome toolbar menu.
 6. Open the popup, save your Gemini API key, enter a prompt, and click `Optimize`.
 
