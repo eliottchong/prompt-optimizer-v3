@@ -15,13 +15,12 @@
       }
       h1 { margin: 0 0 14px; font-size: 18px; }
       label { display: block; margin: 12px 0 5px; font-weight: 600; }
-      input, textarea, button {
+      input, button {
         border: 1px solid #bdc1c6;
         border-radius: 6px;
         font: inherit;
       }
-      input, textarea { width: 100%; padding: 8px; }
-      textarea { min-height: 110px; resize: vertical; }
+      input { width: 100%; padding: 8px; }
       button {
         padding: 8px 12px;
         background: #fff;
@@ -31,19 +30,8 @@
       button:disabled { cursor: wait; opacity: .6; }
       .row { display: flex; gap: 8px; }
       .row input { flex: 1; }
-      .primary {
-        width: 100%;
-        margin-top: 10px;
-        border-color: #1a73e8;
-        background: #1a73e8;
-        color: #fff;
-      }
-      .primary:hover { background: #1765cc; }
       .status { min-height: 20px; margin-top: 6px; color: #5f6368; }
       .status[data-kind="error"] { color: #b3261e; }
-      .metrics { margin: 8px 0; color: #5f6368; }
-      #copyButton { margin-top: 8px; }
-      [hidden] { display: none; }
     </style>
   </head>
   <body>
@@ -56,18 +44,9 @@
     </div>
     <div id="keyStatus" class="status" role="status" aria-live="polite"></div>
 
-    <label for="prompt">Prompt</label>
-    <textarea id="prompt" placeholder="Paste prompt here"></textarea>
-    <button id="optimizeButton" class="primary" type="button">Optimize</button>
-    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <p>Focus a textbox on a web page, click ✦ to optimize, then ✓ to apply.</p>
 
-    <section id="result" hidden>
-      <div id="metrics" class="metrics"></div>
-      <label for="output">Optimized prompt</label>
-      <textarea id="output" readonly></textarea>
-      <button id="copyButton" type="button">Copy</button>
-    </section>
-
+    <script src="optimizer.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>
