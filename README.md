@@ -1,4 +1,4 @@
-# Prompt Optimizer v2
+# Prompt Optimizer v3
 
 Minimal prompt optimizer powered by Gemini. It keeps the Python CLI and adds a small Chrome extension popup with the same optimization rules.
 
